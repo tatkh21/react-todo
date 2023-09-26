@@ -1,11 +1,8 @@
 import React from "react";
 const todoList = [
-  {
-    id: 1,
-    title: " Cook dinner",
-  },
-  {},
-  {},
+  { id: 1, title: " Cook dinner" },
+  { id: 2, title: "Walk with a dog" },
+  { id: 3, title: "Play with a family" },
 ];
 function App() {
   return (
@@ -19,9 +16,6 @@ function App() {
               <span>
                 <a href={item.url}>{item.title}</a>
               </span>
-              <span>{item.author}</span>
-              <span>{item.num_comments}</span>
-              <span>{item.points}</span>
             </li>
           );
         })}
