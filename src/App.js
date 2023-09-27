@@ -13,9 +13,7 @@ function App() {
         {todoList.map(function (item) {
           return (
             <li key={item.objectID}>
-              <span>
-                <a href={item.url}>{item.title}</a>
-              </span>
+              <span>{item.title}</span>
             </li>
           );
         })}
